@@ -13,7 +13,7 @@ Download the archive from Releases:
 SHA256:
 
 ```text
-BBEC1A15176AA440507F4EFCF88D5907D636146B4CDCD0AFAFA70D0DB2AEBACF
+E81C49A9B282F15153E9F89B98FDD801ABABF9AC8601316158B9E660893B513E
 ```
 
 ## Frame Generation Hotkeys
@@ -32,13 +32,22 @@ Recommended default: `Ctrl+2` for a balanced 60 fps mode. Use `Ctrl+1` for lower
 
 ## Included Components
 
-- mpv.net v7.1.2.0 portable x64
+- mpv.net v7.1.2.0 portable x64 (libmpv v0.41.0-60-g85bf9f4ff)
 - VapourSynth portable runtime
 - Embedded Python runtime required by VapourSynth
 - mvtools and svpflow VapourSynth plugins
 - Four frame generation `.vpy` profiles
 
-The archive was cleaned to remove unrelated tools and AI upscaling assets from the source DW package.
+### Bundled portable_config
+
+- `mpv.conf` - gpu-next / d3d11 renderer, HDR passthrough, night-mode audio compressor
+- `input.conf` - frame generation hotkeys and menu entries
+- `scripts/modernx.lua` + `thumbfast.lua` - modern OSC with seekbar thumbnails
+- `scripts/auto-hdr.lua` + `bin/HDRCmd.exe` - automatic Windows HDR switching (from HDRTray)
+- `scripts/long-video-rules.lua` - resume position for videos longer than 15 minutes, filter reset on file change
+- `scripts/auto-close.lua` - close the player after the last file
+
+The archive was cleaned to remove unrelated tools and AI upscaling assets from the source DW package. Personal data (watch history, shader cache, window state) is not included.
 
 ## Notes
 
