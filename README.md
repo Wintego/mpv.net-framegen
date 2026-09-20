@@ -2,7 +2,7 @@
 
 Portable mpv.net v7.1.2.0 x64 build with VapourSynth frame generation.
 
-This repository distributes a cleaned portable build based on the official mpv.net portable release, with the frame generation functionality migrated from the DW build and reduced to a single tuned preset.
+This repository distributes a cleaned portable build based on the official mpv.net portable release, built around a single tuned frame generation preset.
 
 ## Download
 
@@ -46,7 +46,7 @@ The preset settings were picked by measurement, not by guesswork: about thirty m
 - `scripts/long-video-rules.lua` - resume position for videos longer than 15 minutes, filter reset on file change
 - `scripts/auto-close.lua` - close the player after the last file
 
-The archive was cleaned to remove unrelated tools and AI upscaling assets from the source DW package. Personal data (watch history, shader cache, window state) is not included.
+The archive carries only what the player and the frame generation need. Personal data (watch history, shader cache, window state) is not included.
 
 ## Notes
 
